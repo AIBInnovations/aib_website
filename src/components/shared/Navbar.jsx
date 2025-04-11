@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/#services' },
     { name: 'Projects', path: '/#projects' },
-    { name: 'Contact', path: '/#contact' }
+    { name: 'Contact', path: '/contact' } // Updated to point to the dedicated contact page
   ];
 
   return (
@@ -83,7 +83,9 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            <NeuButton className="px-5 py-2 text-sm">Get Started</NeuButton>
+            <Link to="/contact">
+              <NeuButton className="px-5 py-2 text-sm">Book an Appointment</NeuButton>
+            </Link>
           </nav>
           
           <button 
@@ -135,7 +137,9 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <NeuButton className="mt-2 w-full justify-center">Get Started</NeuButton>
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <NeuButton className="mt-2 w-full justify-center">Book an Appointment</NeuButton>
+              </Link>
             </nav>
           </div>
         )}
