@@ -16,23 +16,43 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
+  // Handle navigation to section on another page
+  useEffect(() => {
+    // Check if there's a hash in the URL after page load/navigation
+    if (location.hash) {
+      // Get the element with that id
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        // Wait a bit for the page to fully render, then scroll
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
+
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/#services' },
-    { name: 'Projects', path: '/#projects' },
-    { name: 'Contact', path: '/contact' } // Updated to point to the dedicated contact page
+    { name: 'Projects', path: '/projects' }, // Updated to direct route instead of hash
+    { name: 'Contact', path: '/contact' }
   ];
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'backdrop-blur-md bg-slate-900/80 border-b border-white/10 py-2' : 'bg-transparent py-4'
+      isScrolled || isMobileMenuOpen ? 'backdrop-blur-md bg-slate-900/80 border-b border-white/10 py-2' : 'bg-transparent py-3 md:py-4'
     }`}>
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <div className="mr-2 w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">AIB</div>
-            <span className="font-bold text-xl tracking-tight">AIB Innovations</span>
+            <div className="mr-2 w-8 h-8 md:w-10 md:h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg md:text-xl">AIB</div>
+            <span className="font-bold text-lg md:text-xl tracking-tight">AIB Innovations</span>
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -40,29 +60,21 @@ const Navbar = () => {
               // Determine if this is an internal anchor link (contains #)
               const isHashLink = item.path.includes('#');
               
-              // For pure hash links on the same page
-              if (isHashLink && !item.path.startsWith('/')) {
-                return (
-                  <a 
-                    key={item.name} 
-                    href={item.path}
-                    className={`text-sm hover:text-white transition-colors ${
-                      location.pathname === '/' ? 'text-slate-300' : 'text-slate-300'
-                    }`}
-                  >
-                    {item.name}
-                  </a>
-                );
-              }
+              // Current path without hash
+              const currentPathWithoutHash = location.pathname;
               
-              // For hash links to sections on another page
+              // For hash links to sections on the same page or another page
               if (isHashLink) {
+                const [pagePath, sectionId] = item.path.split('#');
+                const targetPage = pagePath || '/';
+                const isCurrentPage = currentPathWithoutHash === targetPage;
+                
                 return (
                   <Link 
                     key={item.name} 
                     to={item.path}
                     className={`text-sm hover:text-white transition-colors ${
-                      location.pathname === item.path.split('#')[0] ? 'text-white' : 'text-slate-300'
+                      isCurrentPage ? 'text-white' : 'text-slate-300'
                     }`}
                   >
                     {item.name}
@@ -84,13 +96,14 @@ const Navbar = () => {
               );
             })}
             <Link to="/contact">
-              <NeuButton className="px-5 py-2 text-sm">Book an Appointment</NeuButton>
+              <NeuButton className="px-4 py-2 text-sm">Book an Appointment</NeuButton>
             </Link>
           </nav>
           
           <button 
             className="md:hidden p-2 rounded-lg hover:bg-white/5" 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path 
@@ -111,16 +124,16 @@ const Navbar = () => {
                 // Similar logic as above for mobile menu
                 const isHashLink = item.path.includes('#');
                 
-                if (isHashLink && !item.path.startsWith('/')) {
+                if (isHashLink) {
                   return (
-                    <a 
+                    <Link 
                       key={item.name} 
-                      href={item.path}
+                      to={item.path}
                       className="text-sm text-slate-300 hover:text-white transition-colors py-2"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   );
                 }
                 
@@ -137,9 +150,11 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                <NeuButton className="mt-2 w-full justify-center">Book an Appointment</NeuButton>
-              </Link>
+              <div className="pt-2">
+                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                  <NeuButton className="w-full justify-center py-3">Book an Appointment</NeuButton>
+                </Link>
+              </div>
             </nav>
           </div>
         )}

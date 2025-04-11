@@ -44,23 +44,23 @@ const ContactInfo = () => {
           <ContactInfoItem 
             icon={Phone}
             title="Phone Number"
-            details="+1 (555) 123-4567"
-            link="tel:+15551234567"
+            details="+919926446622"
+            link="tel:+919926446622"
             linkLabel="Call us"
           />
           
           <ContactInfoItem 
             icon={Mail}
             title="Email"
-            details="contact@aibinnovations.com"
-            link="mailto:contact@aibinnovations.com"
+            details="aibinnovations@gmail.com"
+            link="mailto:aibinnovations@gmail.com"
             linkLabel="Send an email"
           />
           
           <ContactInfoItem 
             icon={Clock}
             title="Operating Hours"
-            details="Monday - Friday: 9AM - 6PM (PST)"
+            details="Monday - Friday: 9AM - 6PM (IST)"
           />
           
           <div className="mt-8 pt-8 border-t border-white/10">
