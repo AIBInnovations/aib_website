@@ -24,11 +24,11 @@ const ServiceCard = ({ icon: Icon, title, description }) => {
         {/* Hide description on mobile, show on md and up screens */}
         <p className="text-slate-300 flex-grow hidden md:block">{description}</p>
         
-        {/* "Learn more" text - only visible on hover */}
+        {/* "Learn more" text - only visible on hover
         <div className={`mt-2 md:mt-4 flex items-center text-indigo-400 transition-all duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
           <span className="mr-2 text-sm md:text-base">Learn more</span>
           <ChevronRight size={16} />
-        </div>
+        </div> */}
       </GlassCard>
     </div>
   );
