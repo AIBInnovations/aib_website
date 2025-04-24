@@ -86,6 +86,7 @@
 
 // Inline Glass Card Component
 
+
 const GlassCard = ({ children, className = '' }) => (
   <div className={`backdrop-blur-lg bg-white/10 rounded-2xl border border-white/20 shadow-xl p-6 hover:bg-white/20 transition-all duration-500 ${className}`}>
     {children}
@@ -145,7 +146,7 @@ const TeamSection = ({ scrollY }) => {
       name: "Akshat Jain",
       role: "CEO & Founder",
       quote: "Innovation distinguishes between a leader and a follower.",
-      image: "/src/assets/akshat.jpg", // Replace with actual image URL
+      image: "/images/assets/akshat.jpg", // Replace with actual image URL
       linkedinUrl: "https://www.linkedin.com/in/akshat-jain-261a37213/",
       instagramUrl: "https://www.instagram.com/akshat1908?igsh=aWR5aDN1OGsyY3h2"
     },
@@ -153,7 +154,7 @@ const TeamSection = ({ scrollY }) => {
       name: "Ishan Jain",
       role: "CTO",
       quote: "The best way to predict the future is to invent it.",
-      image: "/src/assets/ishan.jpg", // Replace with actual image URL
+      image: "/images/assets/ishan.jpg", // Replace with actual image URL
       linkedinUrl: "https://www.linkedin.com/in/ishan-jain-64014a238/",
       instagramUrl: "https://www.instagram.com/__ishan05?igsh=MTJuZjdtbzh0aXVkZw%3D%3D&utm_source=qr"
     },
@@ -161,7 +162,7 @@ const TeamSection = ({ scrollY }) => {
       name: "Bhavya Kothari",
       role: "Lead Developer",
       quote: "Code is like humor. When you have to explain it, it's bad.",
-      image: "/src/assets/bhavya.jpg", // Replace with actual image URL
+      image: "/images/assets/bhavya.jpg", // Replace with actual image URL
       linkedinUrl: "https://www.linkedin.com/in/bhavya-kothari-410275210/",
       instagramUrl: "https://www.instagram.com/bhavya_593?igsh=eXU0aWthNjdmdjRl"
     }
