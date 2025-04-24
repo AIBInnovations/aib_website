@@ -40,20 +40,46 @@ const Navbar = () => {
   }, [location]);
 
   // Function to handle navigation and scrolling
-  const handleNavigation = (path) => {
-    // For Services section, we don't want to scroll to top
-    // as it uses a hash link to navigate to a specific section
-    if (path !== '/#services') {
-      window.scrollTo(0, 0);
+  // const handleNavigation = (path) => {
+  //   // For Services section, we don't want to scroll to top
+  //   // as it uses a hash link to navigate to a specific section
+  //   if (path !== '/#services') {
+  //     window.scrollTo(0, 0);
+  //   }
+  // };
+
+// Function to handle navigation and scrolling
+const handleNavigation = (path) => {
+  // Check if this is a hash link to a section
+  if (path.includes('#')) {
+    const [pagePath, sectionId] = path.split('#');
+    const targetPage = pagePath || '/';
+    
+    // If we're already on the target page, just scroll to the section
+    if (location.pathname === targetPage) {
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // We need to navigate to the page first, then scroll to the section
+      // The useEffect hook should handle the scrolling after navigation
     }
-  };
+  } else {
+    // For regular page navigation, scroll to top
+    window.scrollTo(0, 0);
+  }
+};
 
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/#services' },
     { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Contact', path: '/contact' },
+    { name: 'Testimonials', path: '/#testimonials' }
   ];
 
   return (

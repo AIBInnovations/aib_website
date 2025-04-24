@@ -17,6 +17,7 @@ import FeatureSection from './sections/FeatureSection';
 import CtaSection from './sections/CtaSection';
 import Footer from './shared/Footer';
 import Navbar from './shared/Navbar';
+import ProjectsTestimonials from './projects/ProjectsTestimonials';
 
 // Animation utility for scroll reveal
 const useScrollReveal = () => {
@@ -96,6 +97,8 @@ const HomePage = () => {
       {/* Feature Highlight */}
       <FeatureSection />
       
+      <ProjectsTestimonials />
+
       {/* Call to Action */}
       <CtaSection />
       

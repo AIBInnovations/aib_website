@@ -37,7 +37,7 @@ const ContactInfo = () => {
             icon={MapPin}
             title="Office Location"
             details="132 FB Scheme no. 94, Ring road, Indore, MP, India"
-            link="https://maps.google.com"
+            link="https://maps.app.goo.gl/rLT2AuRBipBRctoZ8"
             linkLabel="View on map"
           />
           

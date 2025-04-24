@@ -240,7 +240,7 @@ const ProjectsTestimonials = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-indigo-900 to-slate-900 text-white">
+    <section id="testimonials" className="py-20 bg-gradient-to-br from-indigo-900 to-slate-900 text-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">
