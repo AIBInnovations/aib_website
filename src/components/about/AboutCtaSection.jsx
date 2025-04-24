@@ -1,4 +1,15 @@
 import { NeuButton } from '../ui/NeuButton';
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
+// ScrollToTop component to handle scrolling to top after navigation
+const ScrollToTop = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+  return null;
+};
 
 const AboutCtaSection = () => {
   return (
@@ -16,16 +27,29 @@ const AboutCtaSection = () => {
               Let's discuss how our innovative solutions can help your business thrive in the digital era.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <NeuButton className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-[0_4px_14px_rgba(79,70,229,0.4)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.6)]">
-                Contact Us
-              </NeuButton>
-              <button className="flex items-center justify-center text-white px-8 py-4 rounded-xl bg-white/5 backdrop-blur border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <span className="mr-2">View Our Work</span>
-              </button>
+              <Link 
+                to="/contact" 
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <NeuButton className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-[0_4px_14px_rgba(79,70,229,0.4)] hover:shadow-[0_6px_20px_rgba(79,70,229,0.6)]">
+                  Contact Us
+                </NeuButton>
+              </Link>
+              <Link 
+                to="/projects" 
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <button className="flex items-center justify-center text-white px-8 py-4 rounded-xl bg-white/5 backdrop-blur border border-white/10 hover:bg-white/10 transition-all duration-300">
+                  <span className="mr-2">View Our Work</span>
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      
+      {/* ScrollToTop component can be included here if needed globally */}
+      {/* <ScrollToTop /> */}
     </section>
   );
 };

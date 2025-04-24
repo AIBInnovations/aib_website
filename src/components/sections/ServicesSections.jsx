@@ -9,18 +9,24 @@ const ServiceCard = ({ icon: Icon, title, description }) => {
   
   return (
     <div 
-      className="w-full max-w-sm transition-all duration-500 transform hover:scale-105"
+      className="w-full h-full transition-all duration-500 transform hover:scale-105"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <GlassCard className="h-full flex flex-col items-center text-center">
-        <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 mb-4">
-          <Icon size={28} className="text-white" />
+      {/* Adjusted padding and spacing for mobile */}
+      <GlassCard className="h-full flex flex-col items-center text-center p-4 md:p-6">
+        {/* Smaller icon container on mobile */}
+        <div className="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 flex items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 mb-3 md:mb-4">
+          <Icon size={24} className="text-white" />
         </div>
-        <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
-        <p className="text-slate-300">{description}</p>
-        <div className={`mt-4 flex items-center text-indigo-400 transition-all duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-          <span className="mr-2">Learn more</span>
+        {/* Adjusted text size and margins for mobile */}
+        <h3 className="text-lg md:text-xl font-bold mb-1 md:mb-2 text-white">{title}</h3>
+        {/* Hide description on mobile, show on md and up screens */}
+        <p className="text-slate-300 flex-grow hidden md:block">{description}</p>
+        
+        {/* "Learn more" text - only visible on hover */}
+        <div className={`mt-2 md:mt-4 flex items-center text-indigo-400 transition-all duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+          <span className="mr-2 text-sm md:text-base">Learn more</span>
           <ChevronRight size={16} />
         </div>
       </GlassCard>
@@ -48,7 +54,7 @@ const ServicesSection = ({ scrollY }) => {
     },
     {
       icon: Shield,
-      title: "Cybersecurity",
+      title: "Cybersecurity Services",
       description: "Comprehensive security solutions to protect your digital assets and infrastructure."
     },
     {
@@ -64,23 +70,24 @@ const ServicesSection = ({ scrollY }) => {
   ];
 
   return (
-    <section id="services" className="py-20 relative">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 inline-block bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">Our Services</h2>
+    <section id="services" className="py-12 md:py-20 relative">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 inline-block bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">Our Services</h2>
           <p className="max-w-2xl mx-auto text-slate-300">Comprehensive solutions for all your technology needs, from custom software development to advanced hardware projects.</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Added smaller gap for mobile view */}
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 lg:gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
+              className="h-full transition-all duration-700"
               style={{ 
                 transform: `translateY(${Math.max(0, 100 - (scrollY - 300) / 5)}px)`,
                 opacity: Math.min(1, (scrollY - 300) / 400),
                 transitionDelay: `${index * 100}ms`
               }}
-              className="transition-all duration-700"
             >
               <ServiceCard {...service} />
             </div>

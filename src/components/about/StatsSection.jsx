@@ -2,10 +2,10 @@ import { Briefcase, Users, Award, Clock } from 'lucide-react';
 
 const StatsSection = () => {
   const stats = [
-    { number: "100+", label: "Projects Completed", icon: Briefcase },
-    { number: "45+", label: "Team Members", icon: Users },
-    { number: "15+", label: "Industry Awards", icon: Award },
-    { number: "7", label: "Years of Innovation", icon: Clock }
+    { number: "30+", label: "Projects Completed", icon: Briefcase },
+    { number: "10+", label: "Team Members", icon: Users },
+    { number: "4+", label: "Years Serving", icon: Award },
+    { number: "3", label: "Years of Innovation", icon: Clock }
   ];
 
   return (

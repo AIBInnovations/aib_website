@@ -37,24 +37,37 @@ const FeatureSection = () => {
                     </li>
                   ))}
                 </ul>
-                <NeuButton className="bg-white text-indigo-800">Learn Our Process</NeuButton>
+                {/* <NeuButton className="bg-white text-indigo-800">Learn Our Process</NeuButton> */}
               </div>
               <div className="md:w-1/2 flex justify-center">
-                <div className="relative w-full max-w-sm aspect-square">
+                <div className="relative w-full max-w-sm">
+                  {/* Mobile stats cards layout */}
+                  <div className="md:hidden flex justify-between mb-8">
+                    <div className="p-4 backdrop-blur-md bg-white/10 rounded-lg border border-white/20 shadow-xl">
+                      <div className="text-2xl font-bold text-white">30+</div>
+                      <div className="text-xs text-slate-300">Projects Completed</div>
+                    </div>
+                    
+                    <div className="p-4 backdrop-blur-md bg-white/10 rounded-lg border border-white/20 shadow-xl">
+                      <div className="text-2xl font-bold text-white">100%</div>
+                      <div className="text-xs text-slate-300">Client Satisfaction</div>
+                    </div>
+                  </div>
+                  
                   {/* 3D Cube animation would go here */}
-                  <div className="w-full h-full rounded-2xl bg-white/5 backdrop-blur-md border border-white/20 shadow-xl p-6 flex items-center justify-center">
+                  <div className="w-full aspect-square rounded-2xl bg-white/5 backdrop-blur-md border border-white/20 shadow-xl p-6 flex items-center justify-center">
                     <div className="w-20 h-20 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center">
                       <Layers size={32} className="text-white" />
                     </div>
                   </div>
                   
-                  {/* Stats cards */}
-                  <div className="absolute -top-6 -left-6 p-4 backdrop-blur-md bg-white/10 rounded-lg border border-white/20 shadow-xl">
+                  {/* Stats cards for desktop view */}
+                  <div className="hidden md:block absolute -top-6 -left-6 p-4 backdrop-blur-md bg-white/10 rounded-lg border border-white/20 shadow-xl">
                     <div className="text-2xl font-bold text-white">100+</div>
                     <div className="text-xs text-slate-300">Projects Completed</div>
                   </div>
                   
-                  <div className="absolute -bottom-6 -right-6 p-4 backdrop-blur-md bg-white/10 rounded-lg border border-white/20 shadow-xl">
+                  <div className="hidden md:block absolute -bottom-6 -right-6 p-4 backdrop-blur-md bg-white/10 rounded-lg border border-white/20 shadow-xl">
                     <div className="text-2xl font-bold text-white">95%</div>
                     <div className="text-xs text-slate-300">Client Satisfaction</div>
                   </div>

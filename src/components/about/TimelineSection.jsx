@@ -40,29 +40,29 @@ const TimelineSection = () => {
   // Company timeline
   const timeline = [
     {
-      year: "2018",
-      title: "Company Founded",
-      description: "AIB Innovations was established with a mission to bridge the gap between advanced software and hardware solutions."
-    },
-    {
-      year: "2019",
-      title: "First Major Client",
-      description: "Secured partnership with a Fortune 500 company to develop custom IoT solutions for manufacturing."
-    },
-    {
-      year: "2021",
-      title: "Expansion to AI Solutions",
-      description: "Launched our AI division, focusing on machine learning integration for business intelligence."
-    },
-    {
       year: "2022",
-      title: "International Growth",
-      description: "Opened new offices in Singapore and Berlin to serve our expanding international client base."
+      title: "Company Founded",
+      description: "AIB Innovations was established with a mission to bridge the gap between advanced software and hardware solutions for emerging tech challenges."
+    },
+    {
+      year: "2023",
+      title: "First Major Client",
+      description: "Secured partnership with a Fortune 500 company to develop custom IoT solutions, marking our breakthrough into enterprise-level projects."
     },
     {
       year: "2024",
-      title: "Innovation Lab Launch",
-      description: "Established our state-of-the-art Innovation Lab dedicated to R&D in emerging technologies."
+      title: "Expansion to AI Solutions",
+      description: "Launched our specialized AI division, focusing on machine learning integration and developing cutting-edge predictive analytics platforms."
+    },
+    {
+      year: "2024",
+      title: "New Office Opening",
+      description: "Expanded operations with a new headquarters in Indore's tech corridor, providing space for our growing team and innovation lab."
+    },
+    {
+      year: "2025",
+      title: "International Partnerships",
+      description: "Formed strategic partnerships with international tech firms to collaborate on cross-border technology initiatives and expand our global presence."
     }
   ];
 

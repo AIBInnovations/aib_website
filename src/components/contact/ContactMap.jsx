@@ -6,7 +6,7 @@ const ContactMap = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4 inline-block bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">Visit Our Office</h2>
-          <p className="max-w-2xl mx-auto text-slate-300">Located in the heart of San Francisco's Innovation District</p>
+          <p className="max-w-2xl mx-auto text-slate-300">Located in the heart of India, Indore - Madhya Pradesh</p>
         </div>
       </div>
       

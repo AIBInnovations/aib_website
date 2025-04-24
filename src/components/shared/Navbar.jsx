@@ -33,14 +33,26 @@ const Navbar = () => {
           element.scrollIntoView({ behavior: 'smooth' });
         }, 100);
       }
+    } else {
+      // If there's no hash in the URL, scroll to top
+      window.scrollTo(0, 0);
     }
   }, [location]);
+
+  // Function to handle navigation and scrolling
+  const handleNavigation = (path) => {
+    // For Services section, we don't want to scroll to top
+    // as it uses a hash link to navigate to a specific section
+    if (path !== '/#services') {
+      window.scrollTo(0, 0);
+    }
+  };
 
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Services', path: '/#services' },
-    { name: 'Projects', path: '/projects' }, // Updated to direct route instead of hash
+    { name: 'Projects', path: '/projects' },
     { name: 'Contact', path: '/contact' }
   ];
 
@@ -50,7 +62,11 @@ const Navbar = () => {
     }`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center">
+          <Link 
+            to="/" 
+            className="flex items-center"
+            onClick={() => handleNavigation('/')}
+          >
             <div className="mr-2 w-8 h-8 md:w-10 md:h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg md:text-xl">AIB</div>
             <span className="font-bold text-lg md:text-xl tracking-tight">AIB Innovations</span>
           </Link>
@@ -76,6 +92,7 @@ const Navbar = () => {
                     className={`text-sm hover:text-white transition-colors ${
                       isCurrentPage ? 'text-white' : 'text-slate-300'
                     }`}
+                    onClick={() => handleNavigation(item.path)}
                   >
                     {item.name}
                   </Link>
@@ -90,12 +107,16 @@ const Navbar = () => {
                   className={`text-sm hover:text-white transition-colors ${
                     location.pathname === item.path ? 'text-white' : 'text-slate-300'
                   }`}
+                  onClick={() => handleNavigation(item.path)}
                 >
                   {item.name}
                 </Link>
               );
             })}
-            <Link to="/contact">
+            <Link 
+              to="/contact"
+              onClick={() => handleNavigation('/contact')}
+            >
               <NeuButton className="px-4 py-2 text-sm">Book an Appointment</NeuButton>
             </Link>
           </nav>
@@ -130,7 +151,10 @@ const Navbar = () => {
                       key={item.name} 
                       to={item.path}
                       className="text-sm text-slate-300 hover:text-white transition-colors py-2"
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        handleNavigation(item.path);
+                      }}
                     >
                       {item.name}
                     </Link>
@@ -144,14 +168,23 @@ const Navbar = () => {
                     className={`text-sm hover:text-white transition-colors py-2 ${
                       location.pathname === item.path ? 'text-white' : 'text-slate-300'
                     }`}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => {
+                      setIsMobileMenuOpen(false);
+                      handleNavigation(item.path);
+                    }}
                   >
                     {item.name}
                   </Link>
                 );
               })}
               <div className="pt-2">
-                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                <Link 
+                  to="/contact" 
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    handleNavigation('/contact');
+                  }}
+                >
                   <NeuButton className="w-full justify-center py-3">Book an Appointment</NeuButton>
                 </Link>
               </div>
