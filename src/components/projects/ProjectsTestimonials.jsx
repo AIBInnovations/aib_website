@@ -175,7 +175,7 @@ const ProjectsTestimonials = () => {
       image: "/images/projects/23.png"
     },
     {
-      name: "Shubh Khatri",
+      name: "Shubh Khatri & Mrs. Shweta Khatri",
       role: "Managing Director",
       company: "Punjabi Rishtey Marriage Forum",
       quote: "The team at AIB Innovations helped us do a complete overhaul of our Matrimonial Website with great expertise. They're a smart, up-to-date team that offers the best of solutions. They truly listen, act fast and deliver exactly what you need.",
