@@ -4,7 +4,7 @@ import { NeuButton } from '../ui/NeuButton';
 const ProjectsFeatured = ({ scrollY }) => {
   // Featured project data
   const featuredProject = {
-    title: "NextGen Smart Manufacturing Platform",
+    title: "NextGen AI Interviewing Platform",
     description: "An integrated hardware and software solution that revolutionizes manufacturing processes with IoT sensors, predictive maintenance AI, and real-time analytics dashboard.",
     stats: [
       { label: "Efficiency Increase", value: "47%" },
