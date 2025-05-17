@@ -144,7 +144,7 @@ const TeamSection = ({ scrollY }) => {
   const teamMembers = [
     {
       name: "Akshat Jain",
-      role: "CEO & Founder",
+      role: "CEO & Co-Founder",
       quote: "Innovation distinguishes between a leader and a follower.",
       image: "/images/assets/akshat.jpg", // Replace with actual image URL
       linkedinUrl: "https://www.linkedin.com/in/akshat-jain-261a37213/",
@@ -152,7 +152,7 @@ const TeamSection = ({ scrollY }) => {
     },
     {
       name: "Ishan Jain",
-      role: "CTO",
+      role: "CMO & Co-Founder",
       quote: "The best way to predict the future is to invent it.",
       image: "/images/assets/ishan.jpg", // Replace with actual image URL
       linkedinUrl: "https://www.linkedin.com/in/ishan-jain-64014a238/",
@@ -160,7 +160,7 @@ const TeamSection = ({ scrollY }) => {
     },
     {
       name: "Bhavya Kothari",
-      role: "Lead Developer",
+      role: "CTO & Co-Founder",
       quote: "Code is like humor. When you have to explain it, it's bad.",
       image: "/images/assets/bhavya.jpg", // Replace with actual image URL
       linkedinUrl: "https://www.linkedin.com/in/bhavya-kothari-410275210/",
