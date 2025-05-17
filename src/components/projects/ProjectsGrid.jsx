@@ -624,6 +624,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       image: "/images/projects/8.png", 
       backgroundColor: "#000",
       videoSrc: "/videos/projects/Vipul-Anchal-Investments-Google-Chrome-2024-10-16-21-12-20-online-video-cutter.com_.mp4",
+      link: "https://vipulanchal.in/"
     },
     {
       id: 8,
