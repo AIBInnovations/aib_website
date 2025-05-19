@@ -639,6 +639,16 @@ const ProjectsGrid = ({ activeFilter }) => {
     },
     {
       id: 9,
+      title: "Gray Scale",
+      description: "Greyscale is a high‐end architectural concrete studio that transforms raw concrete into bespoke wall and façade elements. They engineer and manufacture three proprietary materials—Ultra-High Performance Concrete (UHPC), GreyCon (their in-house UHPC formulation), and Cast Stone—each optimized for strength, durability, and aesthetic refinement.",
+      category: "web",
+      tags: ["web"],
+      image: "/images/projects/27.jpeg", 
+      backgroundColor: "#000",
+      videoSrc: "/videos/projects/Screen Recording 2025-05-19 at 12.45.48 PM 2.mov",
+    },
+       {
+      id: 10,
       title: "FIWE",
       description: "FiWe (Financial Wellness Education) creates hands-on, screen-free financial-literacy curricula for K–12 schools—interactive workbooks and tactile challenges that build life-skills, money-management habits and career readiness, with core grade-aligned programs, topic-focused enrichment courses and take-home workshops for parents.",
       category: "web",
@@ -648,7 +658,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       videoSrc: "/videos/projects/Fiwe-Website-Google-Chrome-2024-10-15-20-49-33-online-video-cutter.com_-1.mp4",
     },
     {
-      id: 10,
+      id: 11,
       title: "Womenses",
       description: "Womenses is a Shopify-based wellness brand that formulates herbal capsules targeting women's health concerns—fertility, PCOS/PCOD, irregular periods, cramps, white discharge and weight management—sold direct-to-consumer through its online store.",
       category: "web",
@@ -659,7 +669,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       link: "https://womenses.com/"
     },
     {
-      id: 11,
+      id: 12,
       title: "Metaphor World",
       description: "Metaphor World is a Dubai-based Shopify store that curates best-selling notebooks, NCERT books and everyday stationery—your one-stop online haven for school, office and creative supplies at exclusive prices.",
       category: "web",
@@ -670,7 +680,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       link: "https://www.metaphorworld.com/"
     },    
     {
-      id: 12,
+      id: 13,
       title: "Dream Vista Realtors",
       description: "Dream Vista Realtors is a Dubai-based agency that simplifies buying, selling and renting luxury homes and commercial spaces with deep local market insight and client-first, end-to-end service.",
       category: "web",
@@ -681,7 +691,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       link: "https://dreamvistarealtors.com/"
     },
     {
-      id: 13,
+      id: 14,
       title: "Rare Ventures",
       description: "Rare Ventures is a Central-India real-estate consultancy that helps individuals, HNIs and corporates invest in residential, commercial and agricultural properties—as well as new-age options like REITs, fractional ownership and AIFs—through transparent, end-to-end service.",
       category: "web",
@@ -692,7 +702,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       link: "https://rareventures.in/"
     },
     {
-      id: 14,
+      id: 15,
       title: "Modernizing Biz",
       description: "Modernizing Biz is a podcast platform that distills real-life stories and actionable advice from industry leaders to help entrepreneurs and small-business owners level up.",
       category: "web",
@@ -703,7 +713,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       link: "https://modernizingbiz.com/"
     },
     {
-      id: 15,
+      id: 16,
       title: "Spark Machineries",
       description: "Spark Machineries delivers multilevel, fully-automated robotic parking systems—rotary, puzzle, pit and stack configurations—that maximise space, cut retrieval times and bolster security for crowded urban sites.",
       category: "software/mobile",
@@ -713,7 +723,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       videoSrc: "/videos/projects/WhatsApp-Video-2024-10-16-at-21.44.54_e2ae5fad-online-video-cutter.com_.mp4",
     },
     {
-      id: 16,
+      id: 17,
       title: "Ferrywala - Consumer",
       description: "A hyper-local marketplace app that pins nearby street vendors and daily-needs services—Sabjiwalas, Falwalas, Atalewalas, gardeners, watchmen and more—on an interactive map, letting consumers discover India's \"hidden gems,\" get real-time alerts and buy from 10 + curated categories while digitally empowering un-organised workers with GPS training, verified profiles and ratings.",
       category: "software/mobile",
@@ -724,7 +734,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       link: "https://play.google.com/store/apps/details?id=com.ferrywalaa"
     },
     {
-      id: 17,
+      id: 18,
       title: "Swagni",
       description: "Swagni's automated Agnihotra system now syncs perfectly with sunrise / sunset via an RTC module, boosting timing accuracy and ease of use. These upgrades lifted user engagement and satisfaction by 25 %, driving more repeat sessions from precision-focused users.",
       category: "hardware/iot",
@@ -734,7 +744,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       videoSrc: "/videos/projects/FDownloader.Net_AQPchp_wRCU9ej01EGDB2P7W5GjhktTPkcFVLWyBtZ5UYNE80OBE8Otg-Kr02AuBW_MbcGwn5-Ooco4d0M3tUNQm_360p_(SD).mp4",
     },
     {
-      id: 18,
+      id: 19,
       title: "Ferrywala - Provider",
       description: "A super–simple companion app for street vendors and local helpers. All you do is toggle your location ON when you're open for business and OFF when you're done. Shoppers nearby instantly see you on their map and can head straight to your spot.",
       category: "software/mobile",
@@ -745,7 +755,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       link: "https://play.google.com/store/apps/details?id=com.ferrywalaa.provider"
     },
     {
-      id: 19,
+      id: 20,
       title: "Rotary Parking",
       description: "Table-top prototype of an automated rotary car-parking tower: a stepper-motor–driven carousel lifts and rotates 10 miniature cars on stacked platforms, demonstrating how vertical, multilevel parking can pack more vehicles into a tiny footprint for dense urban sites.",
       category: "hardware/iot",
@@ -755,7 +765,7 @@ const ProjectsGrid = ({ activeFilter }) => {
       videoSrc: "/videos/projects/WhatsApp Video 2025-04-20 at 16.34.36_150cb081.mp4",
     },
     {
-      id: 20,
+      id: 21,
       title: "Parking Detection and Management System",
       description: "Compact parking-bay occupancy demo: four overhead IR sensors watch each slot; when a spot is empty the system triggers an ultra-short-throw \"billboard\" projection onto the vacant space, monetising idle bays. The moment a vehicle is detected, the projector for that slot shuts off—switching ad revenue to guidance mode while confirming the space is taken.",
       category: "hardware/iot",
