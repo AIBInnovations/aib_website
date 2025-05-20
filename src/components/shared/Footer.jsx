@@ -96,7 +96,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a 
-                href="https://www.linkedin.com/company/aib-innovations"
+                href="https://www.linkedin.com/company/aib-innovations-pvt-ltd/about/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white/10 transition-colors"
