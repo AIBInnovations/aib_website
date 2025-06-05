@@ -181,13 +181,13 @@ const ProjectsTestimonials = () => {
       quote: "The team at AIB Innovations helped us do a complete overhaul of our Matrimonial Website with great expertise. They're a smart, up-to-date team that offers the best of solutions. They truly listen, act fast and deliver exactly what you need.",
       image: "/images/projects/26.jpeg"
     },
-    {
-      name: "Nandini Porwal",
-      role: "Co-Founder",
-      company: "Sattva Organics",
-      quote: "AIB Innovations rolled out our Shopify store and WordPress blog in days—polished design, smooth integrations, and responsive support throughout.",
-      image: "/images/projects/24.png"
-    },
+    // {
+    //   name: "Nandini Porwal",
+    //   role: "Co-Founder",
+    //   company: "Sattva Organics",
+    //   quote: "AIB Innovations rolled out our Shopify store and WordPress blog in days—polished design, smooth integrations, and responsive support throughout.",
+    //   image: "/images/projects/24.png"
+    // },
     {
       name: "Mr. Vikas Jain",
       role: "CEO",
