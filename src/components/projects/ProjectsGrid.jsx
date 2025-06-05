@@ -571,17 +571,17 @@ const ProjectsGrid = ({ activeFilter }) => {
       videoSrc: "/videos/projects/Ascent-Google-Chrome-2024-10-16-22-57-00-online-video-cutter.com_.mp4",
       link: "https://ascentindustries.in/"
     },
-    {
-      id: 3,
-      title: "Marketing Conclave",
-      description: "Marketing Conclave (MarCon) is IAMAI's annual digital-marketing summit—its 19th edition—bringing 1,500+ brands, agencies and tech leaders together in Mumbai for a packed one-day agenda of 30 sessions across four tracks.",
-      category: "web",
-      tags: ["web"],
-      image: "/images/projects/2.png", 
-      backgroundColor: "#000",
-      videoSrc: "/videos/projects/Marcon-Made-with-Clipchamp.mp4",
-      link: "https://eventsites.iamai.in/marketingconclave.com/"
-    },
+    // {
+    //   id: 3,
+    //   title: "Marketing Conclave",
+    //   description: "Marketing Conclave (MarCon) is IAMAI's annual digital-marketing summit—its 19th edition—bringing 1,500+ brands, agencies and tech leaders together in Mumbai for a packed one-day agenda of 30 sessions across four tracks.",
+    //   category: "web",
+    //   tags: ["web"],
+    //   image: "/images/projects/2.png", 
+    //   backgroundColor: "#000",
+    //   videoSrc: "/videos/projects/Marcon-Made-with-Clipchamp.mp4",
+    //   link: "https://eventsites.iamai.in/marketingconclave.com/"
+    // },
     {
       id: 4,
       title: "Toonzkart",
@@ -657,17 +657,17 @@ const ProjectsGrid = ({ activeFilter }) => {
       backgroundColor: "#000",
       videoSrc: "/videos/projects/Fiwe-Website-Google-Chrome-2024-10-15-20-49-33-online-video-cutter.com_-1.mp4",
     },
-    {
-      id: 11,
-      title: "Womenses",
-      description: "Womenses is a Shopify-based wellness brand that formulates herbal capsules targeting women's health concerns—fertility, PCOS/PCOD, irregular periods, cramps, white discharge and weight management—sold direct-to-consumer through its online store.",
-      category: "web",
-      tags: ["web"],
-      image: "/images/projects/10.png", 
-      backgroundColor: "#000",
-      videoSrc: "/videos/projects/WOMENSES-Google-Chrome-2024-10-16-22-24-15-online-video-cutter.com_.mp4",
-      link: "https://womenses.com/"
-    },
+    // {
+    //   id: 11,
+    //   title: "Womenses",
+    //   description: "Womenses is a Shopify-based wellness brand that formulates herbal capsules targeting women's health concerns—fertility, PCOS/PCOD, irregular periods, cramps, white discharge and weight management—sold direct-to-consumer through its online store.",
+    //   category: "web",
+    //   tags: ["web"],
+    //   image: "/images/projects/10.png", 
+    //   backgroundColor: "#000",
+    //   videoSrc: "/videos/projects/WOMENSES-Google-Chrome-2024-10-16-22-24-15-online-video-cutter.com_.mp4",
+    //   link: "https://womenses.com/"
+    // },
     {
       id: 12,
       title: "Metaphor World",
@@ -690,17 +690,17 @@ const ProjectsGrid = ({ activeFilter }) => {
       videoSrc: "/videos/projects/Dream.mp4",
       link: "https://dreamvistarealtors.com/"
     },
-    {
-      id: 14,
-      title: "Rare Ventures",
-      description: "Rare Ventures is a Central-India real-estate consultancy that helps individuals, HNIs and corporates invest in residential, commercial and agricultural properties—as well as new-age options like REITs, fractional ownership and AIFs—through transparent, end-to-end service.",
-      category: "web",
-      tags: ["web"],
-      image: "/images/projects/13.png", 
-      backgroundColor: "#000",
-      videoSrc: "/videos/projects/Rare-Ventures.mp4",
-      link: "https://rareventures.in/"
-    },
+    // {
+    //   id: 14,
+    //   title: "Rare Ventures",
+    //   description: "Rare Ventures is a Central-India real-estate consultancy that helps individuals, HNIs and corporates invest in residential, commercial and agricultural properties—as well as new-age options like REITs, fractional ownership and AIFs—through transparent, end-to-end service.",
+    //   category: "web",
+    //   tags: ["web"],
+    //   image: "/images/projects/13.png", 
+    //   backgroundColor: "#000",
+    //   videoSrc: "/videos/projects/Rare-Ventures.mp4",
+    //   link: "https://rareventures.in/"
+    // },
     {
       id: 15,
       title: "Modernizing Biz",
