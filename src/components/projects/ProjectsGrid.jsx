@@ -579,7 +579,7 @@ const ProjectsGrid = ({ activeFilter }) => {
        image: "/images/projects/cristello.png", 
        backgroundColor: "#000",
        videoSrc: "/videos/projects/cristello.mp4",
-       link: "hhttps://cristello.in/"
+       link: "https://cristello.in/"
      },
     {
       id: 4,
