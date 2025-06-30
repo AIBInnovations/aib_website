@@ -556,7 +556,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/7.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Sheshi-Made-with-Clipchamp.mp4",
+//      videoSrc: "/videos/projects/Sheshi-Made-with-Clipchamp.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275665/Sheshi-Made-with-Clipchamp_whiitd.mp4",
       link: "https://sheshi.co.in/"
     },
      {
@@ -567,7 +568,8 @@ const ProjectsGrid = ({ activeFilter }) => {
        tags: ["web"],
        image: "/images/projects/advishka.png", 
        backgroundColor: "#000",
-       videoSrc: "/videos/projects/advishka.mov",
+//       videoSrc: "/videos/projects/advishka.mov",
+       videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275656/advishka_ysccrh.mov",
        link: "https://advishka.com/"
      },
      {
@@ -578,7 +580,8 @@ const ProjectsGrid = ({ activeFilter }) => {
        tags: ["web"],
        image: "/images/projects/cristello.png", 
        backgroundColor: "#000",
-       videoSrc: "/videos/projects/cristello.mp4",
+       videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275629/cristello_spj298.mp4",
+//       videoSrc: "/videos/projects/cristello.mp4",
        link: "https://cristello.in/"
      },
     {
@@ -589,7 +592,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["software"],
       image: "/images/projects/5.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Recording-2025-04-02-201430.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275638/toonzkart_video_imnpg3.mp4",
+//      videoSrc: "/videos/projects/Recording-2025-04-02-201430.mp4",
       link: "https://www.toonzkart.com/"
     },
     {
@@ -600,7 +604,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/3.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Ascent-Google-Chrome-2024-10-16-22-57-00-online-video-cutter.com_.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275627/Ascent-Google-Chrome-2024-10-16-22-57-00-online-video-cutter.com__hlhjos.mp4",
+//      videoSrc: "/videos/projects/Ascent-Google-Chrome-2024-10-16-22-57-00-online-video-cutter.com_.mp4",
       link: "https://ascentindustries.in/"
     },
     // {
@@ -623,7 +628,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/4.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Kushagra-Kid-Made-with-Clipchamp-online-video-cutter.com_.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275646/Kushagra-Kid-Made-with-Clipchamp-online-video-cutter.com__ddt8qg.mp4",
+//      videoSrc: "/videos/projects/Kushagra-Kid-Made-with-Clipchamp-online-video-cutter.com_.mp4",
       link: "https://main.kushagrakid.com/"
     },
     {
@@ -634,7 +640,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["software"],
       image: "/images/projects/6.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Recording-2025-04-02-203811.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275643/punjabi_rishtey_video_vmaiy1.mp4",
+//      videoSrc: "/videos/projects/Recording-2025-04-02-203811.mp4",
       link: "https://user-frontend-seven-virid.vercel.app/"
     },
     {
@@ -645,7 +652,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/8.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Vipul-Anchal-Investments-Google-Chrome-2024-10-16-21-12-20-online-video-cutter.com_.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275659/Vipul-Anchal-Investments-Google-Chrome-2024-10-16-21-12-20-online-video-cutter.com__twoohc.mp4",
+//      videoSrc: "/videos/projects/Vipul-Anchal-Investments-Google-Chrome-2024-10-16-21-12-20-online-video-cutter.com_.mp4",
       link: "https://vipulanchal.in/"
     },
     {
@@ -656,7 +664,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/1.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/High-Crest-Realtors-Made-with-Clipchamp-1.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275659/High-Crest-Realtors-Made-with-Clipchamp-1_zgrzlp.mp4",
+//      videoSrc: "/videos/projects/High-Crest-Realtors-Made-with-Clipchamp-1.mp4",
       link: "https://highcrestrealtors.com/"
     },
     {
@@ -667,7 +676,9 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/27.jpeg", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Screen Recording 2025-05-19 at 12.45.48 PM 2.mov",
+//      videoSrc: "/videos/projects/Screen Recording 2025-05-19 at 12.45.48 PM 2.mov",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275642/gray_scale_video_ejno1s.mov",
+      link: "https://greyscale-theta.vercel.app"
     },
        {
       id: 10,
@@ -677,7 +688,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/9.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Fiwe-Website-Google-Chrome-2024-10-15-20-49-33-online-video-cutter.com_-1.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275649/Fiwe-Website-Google-Chrome-2024-10-15-20-49-33-online-video-cutter.com_-1_xfa7qe.mp4",
+//      videoSrc: "/videos/projects/Fiwe-Website-Google-Chrome-2024-10-15-20-49-33-online-video-cutter.com_-1.mp4",
     },
     // {
     //   id: 11,
@@ -698,7 +710,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/11.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Recording 2025-04-24 170549.mp4",
+//      videoSrc: "/videos/projects/Recording 2025-04-24 170549.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275649/metaphore_world_video_eviqa2.mp4",
       link: "https://www.metaphorworld.com/"
     },    
     {
@@ -709,7 +722,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/12.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Dream.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275631/Dream_wpxgnx.mp4",
+//      videoSrc: "/videos/projects/Dream.mp4",
       link: "https://dreamvistarealtors.com/"
     },
      {
@@ -720,7 +734,8 @@ const ProjectsGrid = ({ activeFilter }) => {
        tags: ["web"],
        image: "/images/projects/alesons.png", 
        backgroundColor: "#000",
-       videoSrc: "/videos/projects/alesons.mp4",
+       videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275624/alesons_ozlpyk.mp4",
+//       videoSrc: "/videos/projects/alesons.mp4",
        link: "https://www.alesons.com/"
      },
     // {
@@ -742,7 +757,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["web"],
       image: "/images/projects/14.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/Modernizing-Biz-Podcast-Google-Chrome-2024-10-16-22-19-14-online-video-cutter.com_.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275649/Modernizing-Biz-Podcast-Google-Chrome-2024-10-16-22-19-14-online-video-cutter.com__rr9jxh.mp4",
+//      videoSrc: "/videos/projects/Modernizing-Biz-Podcast-Google-Chrome-2024-10-16-22-19-14-online-video-cutter.com_.mp4",
       link: "https://modernizingbiz.com/"
     },
     {
@@ -753,7 +769,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["software", "mobile"],
       image: "/images/projects/16.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/WhatsApp-Video-2024-10-16-at-21.44.54_e2ae5fad-online-video-cutter.com_.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275654/spark_machineries_video_qbqemd.mp4",
+//      videoSrc: "/videos/projects/WhatsApp-Video-2024-10-16-at-21.44.54_e2ae5fad-online-video-cutter.com_.mp4",
     },
     {
       id: 17,
@@ -763,7 +780,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["software", "mobile"],
       image: "/images/projects/17.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/WhatsApp-Video-2024-10-16-at-21.03.17_c0d5d0b0-online-video-cutter.com-2.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275625/ferrywala_video_binz6h.mp4",
+//      videoSrc: "/videos/projects/WhatsApp-Video-2024-10-16-at-21.03.17_c0d5d0b0-online-video-cutter.com-2.mp4",
       link: "https://play.google.com/store/apps/details?id=com.ferrywalaa"
     },
     {
@@ -774,7 +792,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["hardware", "iot"],
       image: "/images/projects/20.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/FDownloader.Net_AQPchp_wRCU9ej01EGDB2P7W5GjhktTPkcFVLWyBtZ5UYNE80OBE8Otg-Kr02AuBW_MbcGwn5-Ooco4d0M3tUNQm_360p_(SD).mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275630/swagni_video_eedddv.mp4",
+//      videoSrc: "/videos/projects/FDownloader.Net_AQPchp_wRCU9ej01EGDB2P7W5GjhktTPkcFVLWyBtZ5UYNE80OBE8Otg-Kr02AuBW_MbcGwn5-Ooco4d0M3tUNQm_360p_(SD).mp4",
     },
     {
       id: 19,
@@ -784,7 +803,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["software", "mobile"],
       image: "/images/projects/21.png", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/WhatsApp-Video-2024-10-16-at-21.03.11_ea8e52e4-online-video-cutter.com_-1.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275620/ferrywala_provider_video_dywpjx.mp4",
+//      videoSrc: "/videos/projects/WhatsApp-Video-2024-10-16-at-21.03.11_ea8e52e4-online-video-cutter.com_-1.mp4",
       link: "https://play.google.com/store/apps/details?id=com.ferrywalaa.provider"
     },
     {
@@ -795,7 +815,8 @@ const ProjectsGrid = ({ activeFilter }) => {
       tags: ["hardware", "iot"],
       image: "/images/projects/22.jpg", 
       backgroundColor: "#000",
-      videoSrc: "/videos/projects/WhatsApp Video 2025-04-20 at 16.34.36_150cb081.mp4",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275655/rotary_parking_video_wrvkhp.mp4",
+//      videoSrc: "/videos/projects/WhatsApp Video 2025-04-20 at 16.34.36_150cb081.mp4",
     },
     {
       id: 21,
