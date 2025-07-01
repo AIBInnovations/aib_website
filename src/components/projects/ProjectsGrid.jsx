@@ -601,6 +601,19 @@ const ProjectsGrid = ({ activeFilter }) => {
       link: "https://www.toonzkart.com/"
     },
     {
+      id: 25,
+      title: "The Shahi Voyage",
+      description: "The Shahi Voyage is a boutique hotel offering a relaxed vacation experience with modern amenities-fine double beds, a swimming pool, kids' play area, and global cuisine served in its in-house restaurant.",
+      category: "web",
+      tags: ["web"],
+      image: "https://res.cloudinary.com/dwroh4zkk/image/upload/v1751374117/theshahivoyage_eposoa.png", 
+//      image: "/images/projects/3.png", 
+      backgroundColor: "#000",
+      videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751370817/Screen_Recording_2025-07-01_at_5.20.35_PM_online-video-cutter.com_lxnxqt.mp4",
+//      videoSrc: "/videos/projects/Ascent-Google-Chrome-2024-10-16-22-57-00-online-video-cutter.com_.mp4",
+      link: "https://theshahivoyage.com/"
+    },
+    {
       id: 2,
       title: "Ascent Industrial Manufacturers",
       description: "Ascent Industries is an ISO 9001-certified Indian manufacturer (est. 2011) that produces precision CNC-machined, sheet-metal and laser-cut components—high-quality import-substitutes supplied to a broad range of industrial clients worldwide.",
