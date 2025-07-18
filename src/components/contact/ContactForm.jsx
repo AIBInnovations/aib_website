@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { NeuButton } from '../ui/NeuButton';
 import { GlassCard } from '../ui/GlassCard';
 import { Send, Check, AlertTriangle } from 'lucide-react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 // Form Input Component
 const FormInput = ({ label, type = 'text', placeholder, value, onChange, name, required = false }) => (
@@ -66,12 +68,41 @@ const ContactForm = ({ onSubmit, formStatus }) => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
   
+  const formRef = useRef();
+
   const handleSubmit = (e) => {
-    e.preventDefault();
-    onSubmit(formData);
-    
-    // Reset form if submission was successful
-    if (!formStatus.isError) {
+  e.preventDefault();
+
+  // 1. Send message to admin (you)
+  emailjs.send(
+    'service_1wmtazq',
+    'template_cm67ghz',       // Template you created to notify yourself
+    formData,
+    '58o-uWzSQZr_uPyPI'
+  ).then(() => {
+    console.log('Admin email sent to aibinnovations@gmail.com');
+  }).catch((error) => {
+    console.error('Admin email failed:', error.text);
+  });
+
+  // 2. Send auto-reply to the user
+  emailjs.send(
+    'service_1wmtazq',
+    'template_7asvnd8',           // Auto-reply template
+    {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      company: formData.company,
+      subject: formData.subject,
+      message: formData.message
+    },
+    '58o-uWzSQZr_uPyPI'
+  ).then(
+    (result) => {
+      console.log("Auto-reply sent to user:", result.text);
+      onSubmit({ isSubmitted: true, isError: false });
+
       setFormData({
         name: '',
         email: '',
@@ -80,8 +111,20 @@ const ContactForm = ({ onSubmit, formStatus }) => {
         subject: '',
         message: ''
       });
-    }
+
+      setTimeout(() => {
+        onSubmit({ isSubmitted: false, isError: false });
+      }, 5000);
+    },
+    (error) => {
+      console.error("Auto-reply failed:", error.text);
+      onSubmit({ isSubmitted: true, isError: true });
+    });
   };
+
+
+    
+
 
   return (
     <div id="contact-form">

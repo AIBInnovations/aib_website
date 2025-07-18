@@ -150,14 +150,8 @@ const ContactPage = () => {
   }, []);
 
   // Handle form submission
-  const handleFormSubmit = (formData) => {
-    // Simulating form submission - would be replaced with actual API call
-    console.log('Form submitted with data:', formData);
-    
-    // Simulate success (in a real app, this would depend on API response)
-    setFormStatus({ isSubmitted: true, isError: false });
-    
-    // For demo purposes, reset form status after 5 seconds
+  const handleFormSubmit = (status) => {
+    setFormStatus(status);
     setTimeout(() => {
       setFormStatus({ isSubmitted: false, isError: false });
     }, 5000);
