@@ -788,7 +788,6 @@ const ProjectsGrid = ({ activeFilter }) => {
       videoSrc: "https://res.cloudinary.com/dwroh4zkk/video/upload/v1751275649/Modernizing-Biz-Podcast-Google-Chrome-2024-10-16-22-19-14-online-video-cutter.com__rr9jxh.mp4",
 //      videoSrc: "/videos/projects/Modernizing-Biz-Podcast-Google-Chrome-2024-10-16-22-19-14-online-video-cutter.com_.mp4",
       // link: "https://modernizingbiz.com/"
-      link: "#"
     },
     {
       id: 16,
