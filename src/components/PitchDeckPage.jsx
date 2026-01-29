@@ -14,23 +14,27 @@ const PitchDeckPage = () => {
   const mousePosition = useThrottledMousePosition(50, !shouldDisableParallax);
 
   return (
-    // Use h-dvh for dynamic viewport height (respects mobile browser chrome)
-    <div className="h-dvh bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white overflow-hidden flex flex-col">
+    // Fixed full-screen container - prevents any page scroll
+    <div
+      className="fixed inset-0 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white flex flex-col"
+      style={{
+        height: '100dvh',
+        // Fallback for browsers that don't support dvh
+        minHeight: '-webkit-fill-available'
+      }}
+    >
       {/* Animated background elements - only rendered when parallax is enabled */}
       {!shouldDisableParallax && (
         <BackgroundElements mousePosition={mousePosition} />
       )}
 
-      {/* Static background for mobile/reduced motion */}
-      {shouldDisableParallax && (
-        <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 -z-10" />
-      )}
+      {/* Navigation - fixed height */}
+      <div className="flex-none">
+        <Navbar />
+      </div>
 
-      {/* Navigation */}
-      <Navbar />
-
-      {/* PDF Viewer - takes remaining height with proper flex containment */}
-      <main className="flex-1 min-h-0 pt-20 pb-4 px-4 sm:px-6 relative z-10">
+      {/* PDF Viewer - takes all remaining space */}
+      <main className="flex-1 min-h-0 pt-16 pb-4 px-4 sm:px-6 relative z-10 overflow-hidden">
         <PdfViewer />
       </main>
     </div>
